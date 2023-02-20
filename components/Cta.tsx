@@ -7,13 +7,13 @@ type Props = {};
 
 const Cta = (props: Props) => {
   return (
-    <div className="bg-[#EEE1FF] flex items-center justify-center">
+    <div className="bg-[#EEE1FF] flex items-center justify-center p-[16px] md:p-0">
       <div className="flex items-center max-w-7xl mx-auto flex-col-reverse md:flex-row">
         <div className="flex-1 relative">
-          <Image src={Picture} alt="picture" className="mt-[-40px]" />
+          <Image src={Picture} alt="picture" className="md:mt-[-40px] mt-4" />
         </div>
-        <div className="flex flex-1 flex-col gap-4">
-          <h3 className="font-b-700 text-[34px] leading-[44px] text-black">
+        <div className="flex flex-1 flex-col gap-2 md:gap-4">
+          <h3 className="font-b-700 text-[24px] leading-[30px] md:text-[34px] md:leading-[44px] text-black">
             Make your own Event
           </h3>
           <span className="text-[14px] leading-[23px] text-black">
