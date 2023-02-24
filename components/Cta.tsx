@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Picture from "../public/event2.svg";
 import ButtonComponent from "./Button";
+import Link from "next/link";
 
 type Props = {};
 
@@ -19,7 +20,9 @@ const Cta = (props: Props) => {
           <span className="text-[14px] leading-[23px] text-black">
             Make your own event here by clicking the button below
           </span>
-          <ButtonComponent text="Create Event" bg={true} />
+          <Link href="create-event">
+            <ButtonComponent text="Create Event" bg={true} />
+          </Link>
         </div>
       </div>
     </div>

@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import { Icon } from "@iconify/react";
 import Image from "next/image";
 import Logo from "../public/logo.svg";
+import { ConnectWallet } from "@thirdweb-dev/react";
 import Hamburger from "../public/icon-hamburger.svg";
 import Close from "../public/icon-close.svg";
 import ButtonComponent from "./Button";
@@ -59,6 +60,12 @@ const Header = (props: Props) => {
               >
                 <Image src={Close} alt="hamburger" className="" />
               </div>
+
+              <ConnectWallet
+                accentColor="#F5167E"
+                className="header__button"
+                colorMode="dark"
+              />
 
               <li className="navItem">
                 <Link href="/">Features</Link>

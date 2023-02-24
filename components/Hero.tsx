@@ -7,11 +7,7 @@ import ButtonComponent from "./Button";
 type Props = {};
 
 const Hero = (props: Props) => {
-  const stats = [
-    { title: "projects funded", value: "234,589" },
-    { title: "towards creative work", value: "$6,896,124,456" },
-    { title: "pledges", value: "70,484,415" },
-  ];
+  
   return (
     <div className="py-[16px] px-[16px] md:py-[20px] md:px-[60px] h-screen w-full relative animate-ChangeBg sm:bg-cover bg-center bg-bg-hero">
       <Header />
