@@ -17,7 +17,9 @@ const Hero = (props: Props) => {
       <Header />
       <div className="h-full max-w-7xl mx-auto w-full flex items-center justify-center">
         <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-[20px]">
-          <Image src={Picture} alt="hero-Image" className="flex-1" />
+          <div className="flex-1">
+            <Image src={Picture} alt="hero-Image" />
+          </div>
           <div className="flex items-start flex-col gap-[26px] flex-1">
             <h1 className="text-[30px] md:text-[40px] md:leading-[49px] font-b-700">
               SBS MTV The Kpop Show Ticket Package
